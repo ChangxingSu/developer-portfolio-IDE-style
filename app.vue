@@ -44,3 +44,11 @@ export default {
   }
 }
 </script>
+
+<script setup>
+onMounted(() => {
+  // 从localStorage读取主题设置
+  const theme = localStorage.getItem('theme') || 'dark'
+  document.documentElement.classList.toggle('dark', theme === 'dark')
+})
+</script>

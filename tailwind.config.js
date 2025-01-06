@@ -1,4 +1,5 @@
 module.exports = {
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
@@ -25,7 +26,14 @@ module.exports = {
                 'greenfy': '#43D9AD',
                 'bluefy-dark': '#011627',
                 'purplefy': '#5565E8',
-
+                'light': {
+                    'bg': '#ffffff',
+                    'text': '#1f2937',
+                    'border': '#e5e7eb',
+                    'primary': '#3b82f6',
+                    'secondary': '#6b7280',
+                    'accent': '#8b5cf6'
+                },
             }
         },
         fontFamily: {

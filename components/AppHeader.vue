@@ -1,5 +1,5 @@
 <template>
-    <header id="navbar" class="w-full hidden lg:flex flex-col">
+    <header id="navbar" class="w-full hidden lg:flex flex-col sticky top-0 z-50 w-full border-b dark:border-gray-800 bg-white dark:bg-gray-900">
       <nav class="w-full flex justify-between border-bot">
         <github-corner url="https://github.com/alexdeploy/developer-portfolio-v2" />
           <div class="flex">
@@ -26,16 +26,23 @@
       
       </nav>
 
+      <div class="flex items-center space-x-4">
+        <ThemeToggle />
+      </div>
+
     </header>
 
 </template>
 
 <script>
 import GithubCorner from './GithubCorner.vue';
+import ThemeToggle from './ThemeToggle.vue'
+
 export default {
   name: 'AppHeader',
   components: {
-    GithubCorner
+    GithubCorner,
+    ThemeToggle
   },
   computed: {
     // Set active class to current page link
